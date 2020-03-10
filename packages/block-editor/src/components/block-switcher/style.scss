@@ -3,11 +3,12 @@
 }
 
 // Show an indicator triangle.
+.block-editor-block-switcher__no-switcher-icon,
 .block-editor-block-switcher__toggle {
 	position: relative;
 
 	&::after {
-		display: none;
+		display: block;
 		content: "";
 		position: absolute;
 		bottom: 1px;
@@ -164,10 +165,6 @@
 	}
 
 	.components-button.block-editor-block-switcher__toggle {
-		&::after {
-			display: block;
-		}
-
 		.block-editor-block-icon,
 		.block-editor-block-switcher__transform {
 			width: $block-toolbar-height;
